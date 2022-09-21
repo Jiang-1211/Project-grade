@@ -77,7 +77,7 @@ public class grade extends javax.swing.JFrame {
         jTable1 = new javax.swing.JTable();
         jButton1 = new javax.swing.JButton();
 
-        jTextField4.setFont(new java.awt.Font("新細明體", 0, 24)); // NOI18N
+        jTextField4.setFont(new java.awt.Font("微軟正黑體", 0, 24)); // NOI18N
         jTextField4.setText("jTextField1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
