@@ -20,7 +20,7 @@ import javax.swing.table.DefaultTableModel;
  * @author tom13
  */
 public class grade extends javax.swing.JFrame {
-    
+    //先設定各個欄位的名稱
      String[] colname = {
         "名字", "國文", "英文", "數學", "總分", "平均"
     };
@@ -33,7 +33,7 @@ public class grade extends javax.swing.JFrame {
         myModel = (DefaultTableModel) jTable1.getModel();
         jTable1.setShowGrid(true);
        String[] ar1;
-
+       //在.jar的同個資料夾建立一個文字檔儲存成績
         try {
            FileReader fr = new FileReader("成績.txt");
             BufferedReader br = new BufferedReader(fr);
@@ -279,7 +279,7 @@ public class grade extends javax.swing.JFrame {
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         txtname.requestFocus();
     }//GEN-LAST:event_formWindowOpened
-
+    //檢查成績是否在0到100的範圍內
     private void txtmathActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtmathActionPerformed
         if (Integer.parseInt(txtmath.getText()) > 100 || Integer.parseInt(txtmath.getText()) < 0) {
             JOptionPane.showMessageDialog(null, "數學分數輸入錯誤");
@@ -288,7 +288,7 @@ public class grade extends javax.swing.JFrame {
             btn寫ActionPerformed(evt);
         }
     }//GEN-LAST:event_txtmathActionPerformed
-
+    //檢查成績是否在0到100的範圍內
     private void txtchineseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtchineseActionPerformed
         if (Integer.parseInt(txtchinese.getText()) > 100 || Integer.parseInt(txtchinese.getText()) < 0) {
             JOptionPane.showMessageDialog(null, "國文分數輸入錯誤");
@@ -297,7 +297,7 @@ public class grade extends javax.swing.JFrame {
             txtenglish.requestFocus();
         }
     }//GEN-LAST:event_txtchineseActionPerformed
-
+    //檢查成績是否在0到100的範圍內
     private void txtenglishActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtenglishActionPerformed
         if (Integer.parseInt(txtenglish.getText()) > 100 || Integer.parseInt(txtenglish.getText()) < 0) {
             JOptionPane.showMessageDialog(null, "英文分數輸入錯誤");
@@ -313,7 +313,7 @@ public class grade extends javax.swing.JFrame {
 
     private void btn寫ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn寫ActionPerformed
         int sum = 0, average = 0;
-
+        //如果成績輸入錯誤就回到錯誤的那格並全選文字以方便再次輸入
         if (Integer.parseInt(txtchinese.getText()) > 100 || Integer.parseInt(txtchinese.getText()) < 0) {
             JOptionPane.showMessageDialog(null, "國文分數輸入錯誤");
             txtchinese.selectAll();
@@ -326,7 +326,7 @@ public class grade extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "數學分數輸入錯誤");
             txtmath.selectAll();
         }
-
+        //計算平均後將數據寫入檔案
         sum = Integer.parseInt(txtchinese.getText()) + Integer.parseInt(txtenglish.getText()) + Integer.parseInt(txtmath.getText());
         average = sum / 3;
         lblsum.setText(String.valueOf(sum));
@@ -344,7 +344,7 @@ public class grade extends javax.swing.JFrame {
     }//GEN-LAST:event_btn寫ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-  
+        //讀取資料家中的檔案並顯示在螢幕上
         String[] ar1;
 
         try {
