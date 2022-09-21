@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package hw_j03_讀寫成績;
+package grade;
 
 
 import java.awt.Color;
@@ -19,7 +19,7 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author tom13
  */
-public class 讀寫成績 extends javax.swing.JFrame {
+public class grade extends javax.swing.JFrame {
     
      String[] colname = {
         "名字", "國文", "英文", "數學", "總分", "平均"
@@ -28,7 +28,7 @@ public class 讀寫成績 extends javax.swing.JFrame {
     public DefaultTableModel myModel = null;
     public int x=0;
     
-    public 讀寫成績() {
+    public grade() {
         initComponents();
         myModel = (DefaultTableModel) jTable1.getModel();
         jTable1.setShowGrid(true);
@@ -378,20 +378,21 @@ public class 讀寫成績 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(讀寫成績.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(grade.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(讀寫成績.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(grade.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(讀寫成績.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(grade.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(讀寫成績.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(grade.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new 讀寫成績().setVisible(true);
+                new grade().setVisible(true);
 
             }
         });
