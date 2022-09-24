@@ -18,10 +18,15 @@
 ### 註:.java檔位於<https://github.com/Jiang-1211/Project-grade/tree/main/grade/src/grade>
 ## 視窗程式截圖  
 ![image](image/視窗程式截圖(1).png)  
+![image](image/視窗程式截圖(2).png)  
+![image](image/視窗程式截圖(3).png)  
   
 ## 設計界面截圖  
 ![image](image/設計界面截圖(1).png)  
+![image](image/設計界面截圖(2).png)  
   
 ## 程式截圖  
 ![image](image/程式截圖(1).png)  
 ![image](image/程式截圖(2).png)  
+![image](image/程式截圖(3).png)  
+![image](image/程式截圖(4).png)  
