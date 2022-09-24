@@ -30,3 +30,7 @@
 ![image](image/程式截圖(2).png)  
 ![image](image/程式截圖(3).png)  
 ![image](image/程式截圖(4).png)  
+  
+## 文字檔截圖  
+![image](image/文字檔截圖.png)   
+  
